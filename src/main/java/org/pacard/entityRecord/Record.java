@@ -30,7 +30,7 @@ public class Record {
     // Информация об обследовании
     private Calendar date;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name="doctorId")
     private Doctor doctor;
 
