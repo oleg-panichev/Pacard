@@ -1,4 +1,6 @@
-package org.pacard.entity;
+package org.pacard.entityPeople;
+
+import org.pacard.entityRecord.Record;
 
 import javax.persistence.*;
 import java.util.ArrayList;

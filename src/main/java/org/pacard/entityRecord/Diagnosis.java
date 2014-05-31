@@ -1,4 +1,4 @@
-package org.pacard.entity;
+package org.pacard.entityRecord;
 
 /**
  * Created by Oleg on 30.05.14.
