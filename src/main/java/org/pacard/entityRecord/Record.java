@@ -47,8 +47,8 @@ public class Record {
     public Map<Analysis, String> analysis = new TreeMap<Analysis, String>();
     public Map<Research, String> research = new TreeMap<Research, String>();
 
-    private Map<String, String> recommendations = new TreeMap<String, String>();
-    private Map<Medicine, String> medicines = new TreeMap<Medicine, String>();
+    private Map<Recommendation, String> recommendations = new TreeMap<Recommendation, String>();
+    private Map<MedicineGroup, String> medicines = new TreeMap<MedicineGroup, String>();
     private Map<Treatment, String> treatment = new TreeMap<Treatment, String>();
     private Map<Effect, String> effects = new TreeMap<Effect, String>();
     public String summary;

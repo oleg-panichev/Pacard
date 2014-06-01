@@ -5,5 +5,5 @@ package org.pacard.entityRecord;
  */
 public class Analysis {
     private AnalysisType type;
-    private AnalysisDescription description;
+
 }

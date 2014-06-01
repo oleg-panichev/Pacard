@@ -5,6 +5,5 @@ package org.pacard.entityRecord;
  */
 public class Research {
     private ResearchType type;
-    private ResearchDescription description;
 
 }

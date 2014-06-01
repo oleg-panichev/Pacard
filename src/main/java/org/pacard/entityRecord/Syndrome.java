@@ -5,7 +5,6 @@ package org.pacard.entityRecord;
  */
 public class Syndrome {
     private SyndromeType type;
-    private Symptom symptom;
 
     private int durationInt;
     public enum Duration {MINUTES, SECONDS};

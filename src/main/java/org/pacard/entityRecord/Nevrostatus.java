@@ -5,5 +5,5 @@ package org.pacard.entityRecord;
  */
 public class Nevrostatus {
     private NevrostatusType type;
-    private NevrostatusDescription description;
+
 }
