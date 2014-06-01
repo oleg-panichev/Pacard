@@ -11,6 +11,7 @@ import java.util.Set;
 public class NevrostatusType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "NEVROSTATUS_TYPE_ID")
     private int NevrostatusTypeID;
 
     private String NevrostatusTypeName;

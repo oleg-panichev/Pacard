@@ -9,7 +9,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import java.util.*;
 
@@ -48,9 +47,9 @@ public class Record {
     public Map<Research, String> research = new TreeMap<Research, String>();
 
     private Map<Recommendation, String> recommendations = new TreeMap<Recommendation, String>();
-    private Map<MedicineGroup, String> medicines = new TreeMap<MedicineGroup, String>();
+    private Set<MedicineGroup> medicineGroups = new TreeSet<MedicineGroup>();
     private Map<Treatment, String> treatment = new TreeMap<Treatment, String>();
-    private Map<Effect, String> effects = new TreeMap<Effect, String>();
+    private Map<NegativeEffect, String> effects = new TreeMap<NegativeEffect, String>();
     public String summary;
 
     public Record() {

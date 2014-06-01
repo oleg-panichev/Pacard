@@ -11,6 +11,7 @@ import java.util.Set;
 public class SyndromeType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "SYNDROME_TYPE_ID")
     private int SyndromeTypeID;
 
     private String SyndromeTypeName;

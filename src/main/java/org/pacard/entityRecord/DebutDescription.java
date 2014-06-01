@@ -14,6 +14,6 @@ public class DebutDescription {
 
     private String DebutDescriptionName;
     @ManyToOne
-    @JoinColumn(name="debutTypeID")
-    private DebutType type;
+    @JoinColumn(name="DEBUT_TYPE_ID")
+    private DebutType debutType;
 }

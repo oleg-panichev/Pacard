@@ -15,7 +15,7 @@ public class AnalysisDescription {
     private String AnalysisDescriptionName;
 
     @ManyToOne
-    @JoinColumn(name="analysisTypeID")
-    private AnalysisType type;
+    @JoinColumn(name = "ANALYSIS_TYPE_ID")
+    private AnalysisType analysisType;
 }
 

@@ -14,8 +14,8 @@ public class NevrostatusDescription {
     private String NevrostatusDescriptionName;
 
     @ManyToOne
-    @JoinColumn(name="nevrostatusTypeID")
-    private NevrostatusType type;
+    @JoinColumn(name="NEVROSTATUS_TYPE_ID")
+    private NevrostatusType nevrostatusType;
 }
 
 

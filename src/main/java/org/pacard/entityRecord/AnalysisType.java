@@ -11,6 +11,7 @@ import java.util.Set;
 public class AnalysisType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ANALYSIS_TYPE_ID")
     private int AnalysisTypeID;
 
     private String AnalysisTypeName;

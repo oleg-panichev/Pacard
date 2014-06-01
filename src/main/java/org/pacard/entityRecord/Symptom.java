@@ -14,7 +14,7 @@ public class Symptom {
     private String symptomName;
 
     @ManyToOne
-    @JoinColumn(name="syndromeTypeID")
+    @JoinColumn(name="SYNDROME_TYPE_ID")
     private SyndromeType syndromeType;
 }
 

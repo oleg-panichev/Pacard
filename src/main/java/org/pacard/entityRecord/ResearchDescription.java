@@ -15,8 +15,8 @@ public class ResearchDescription {
     private String ResearchDescriptionName;
 
     @ManyToOne
-    @JoinColumn(name="researchTypeID")
-    private ResearchType type;
+    @JoinColumn(name="RESEARCH_TYPE_ID")
+    private ResearchType researchType;
 }
 
 
