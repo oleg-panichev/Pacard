@@ -10,6 +10,7 @@ import javax.persistence.*;
 public class AnalysisDescription {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column
     private int AnalysisDescriptionID;
 
     private String AnalysisDescriptionName;
