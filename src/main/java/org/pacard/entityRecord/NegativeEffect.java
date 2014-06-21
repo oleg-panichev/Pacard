@@ -10,6 +10,25 @@ import javax.persistence.*;
 public class NegativeEffect {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int NegativeEffectID;
-    private String NegativeEffectName;
+    private int negativeEffectID;
+    private String negativeEffectName;
+
+    public NegativeEffect() {
+    }
+
+    public int getNegativeEffectID() {
+        return negativeEffectID;
+    }
+
+    public void setNegativeEffectID(int negativeEffectID) {
+        negativeEffectID = negativeEffectID;
+    }
+
+    public String getNegativeEffectName() {
+        return negativeEffectName;
+    }
+
+    public void setNegativeEffectName(String negativeEffectName) {
+        negativeEffectName = negativeEffectName;
+    }
 }

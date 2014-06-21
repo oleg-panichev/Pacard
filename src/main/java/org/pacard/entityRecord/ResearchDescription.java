@@ -10,13 +10,40 @@ import javax.persistence.*;
 public class ResearchDescription {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int ResearchDescriptionID;
+    private int researchDescriptionID;
 
-    private String ResearchDescriptionName;
+    private String researchDescriptionName;
 
     @ManyToOne
     @JoinColumn(name="RESEARCH_TYPE_ID")
     private ResearchType researchType;
+
+    public ResearchDescription() {
+    }
+
+    public int getResearchDescriptionID() {
+        return researchDescriptionID;
+    }
+
+    public void setResearchDescriptionID(int researchDescriptionID) {
+        researchDescriptionID = researchDescriptionID;
+    }
+
+    public String getResearchDescriptionName() {
+        return researchDescriptionName;
+    }
+
+    public void setResearchDescriptionName(String researchDescriptionName) {
+        researchDescriptionName = researchDescriptionName;
+    }
+
+    public ResearchType getResearchType() {
+        return researchType;
+    }
+
+    public void setResearchType(ResearchType researchType) {
+        this.researchType = researchType;
+    }
 }
 
 

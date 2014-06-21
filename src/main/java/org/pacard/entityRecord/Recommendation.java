@@ -12,4 +12,23 @@ public class Recommendation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int recommendationID;
     private String recommendationName;
+
+    public Recommendation() {
+    }
+
+    public int getRecommendationID() {
+        return recommendationID;
+    }
+
+    public void setRecommendationID(int recommendationID) {
+        this.recommendationID = recommendationID;
+    }
+
+    public String getRecommendationName() {
+        return recommendationName;
+    }
+
+    public void setRecommendationName(String recommendationName) {
+        this.recommendationName = recommendationName;
+    }
 }

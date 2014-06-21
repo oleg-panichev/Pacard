@@ -2,10 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72e6c99c-834c-4fad-841a-18b5e7db0edc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/dao/AnalysisDescriptionDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/dao/AnalysisTypeDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/dao/AnamnesisDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/dao/ConvulsionTypeDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/dao/DebutDescriptionDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/dao/DiagnosisDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/dao/MedicineDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/dao/MedicineGroupDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/dao/NegativeEffectDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/dao/NevrostatusDescriptionDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/dao/NevrostatusTypeDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/dao/RecommendationDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/dao/RecordDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/dao/ResearchDescriptionDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/dao/ResearchTypeDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/dao/SideEffectDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/dao/SymptomDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/dao/SyndromeTypeDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/dao/TreatmentTypeDao.java" />
+      <change type="DELETED" beforePath="C:\Users\Алена\IdeaProjects\Pacard\src\main\resources\META-INF\persistence.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/AnalysisDescription.java" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/AnalysisDescription.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pacard.iml" afterPath="$PROJECT_DIR$/Pacard.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/AnalysisType.java" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/AnalysisType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Anamnesis.java" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Anamnesis.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/ConvulsionType.java" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/ConvulsionType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/DebutDescription.java" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/DebutDescription.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/DebutType.java" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/DebutType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Diagnosis.java" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Diagnosis.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Medicine.java" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Medicine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/MedicineGroup.java" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/MedicineGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/NegativeEffect.java" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/NegativeEffect.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/NevrostatusDescription.java" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/NevrostatusDescription.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/NevrostatusType.java" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/NevrostatusType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Recommendation.java" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Recommendation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Record.java" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Record.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/ResearchDescription.java" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/ResearchDescription.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/ResearchType.java" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/ResearchType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/SideEffect.java" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/SideEffect.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Symptom.java" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Symptom.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/SyndromeType.java" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/SyndromeType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/TreatmentType.java" afterPath="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/TreatmentType.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Pacard.iws" />
@@ -70,28 +106,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SyndromeType.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/SyndromeType.java">
+      <file leaf-file-name="TreatmentTypeDao.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/TreatmentTypeDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="43" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Treatment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Treatment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TreatmentType.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/TreatmentType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="38" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+            <state line="23" column="86" selection-start="634" selection-end="634" vertical-scroll-proportion="0.31772575" vertical-offset="201" max-vertical-offset="833">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,65 +117,99 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="persistence.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <file leaf-file-name="SideEffectDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/SideEffectDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="111" selection-start="1878" selection-end="1878" vertical-scroll-proportion="0.91071427" vertical-offset="0" max-vertical-offset="680">
+            <state line="33" column="68" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.0" vertical-offset="184" max-vertical-offset="833">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NevrostatusTypeDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/NevrostatusTypeDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="21" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="218" max-vertical-offset="816">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PatientDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/PatientDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="23" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SideEffect.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/SideEffect.java">
+      <file leaf-file-name="SymptomDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/SymptomDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="38" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-              <folding />
+            <state line="16" column="31" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="833">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Nevrostatus.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Nevrostatus.java">
+      <file leaf-file-name="RecommendationDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/RecommendationDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="33" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-              <folding />
+            <state line="37" column="26" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="850">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NevrostatusDescription.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/NevrostatusDescription.java">
+      <file leaf-file-name="RecordDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/RecordDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="43" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-              <folding />
+            <state line="33" column="100" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0" vertical-offset="320" max-vertical-offset="918">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NevrostatusType.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/NevrostatusType.java">
+      <file leaf-file-name="ResearchDescriptionDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/ResearchDescriptionDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="40" selection-start="405" selection-end="420" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-              <folding />
+            <state line="38" column="15" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="816">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Recommendation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Recommendation.java">
+      <file leaf-file-name="SyndromeTypeDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/SyndromeTypeDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-              <folding />
+            <state line="33" column="74" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="833">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Research.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Research.java">
+      <file leaf-file-name="ResearchTypeDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/ResearchTypeDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="4" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-              <folding />
+            <state line="29" column="43" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="816">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -175,45 +227,57 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entity/PacardUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entity/Doctor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entity/Syndrome.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entity/Admin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entity/Nurse.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pacard/entity/Patient.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pacard/entity/Record.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Debut.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Diagnosis.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Convulsion.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/ConvulsionType.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Syndrome.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Nevrostatus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Analysis.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Research.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Anamnesis.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Recommendation.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Effect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Record.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/NegativeEffect.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Treatment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/TreatmentType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Medicine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/AnalysisType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/DebutType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/NevrostatusType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/ResearchType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Symptom.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/SyndromeType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/DebutDescription.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/NevrostatusDescription.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/ResearchDescription.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/MedicineGroup.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/SideEffect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/AnalysisDescription.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/dao/AnalysisDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Anamnesis.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Diagnosis.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Recommendation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Symptom.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Analysis.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/AnalysisDescription.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/AnalysisType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/ConvulsionType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/DebutDescription.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/DebutType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Medicine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/MedicineGroup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/NegativeEffect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/NevrostatusDescription.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/NevrostatusType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/ResearchDescription.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/ResearchType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/SideEffect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/SyndromeType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/TreatmentType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/dao/AnamnesisDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/dao/DiagnosisDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/dao/MedicineDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/dao/AnalysisDescriptionDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/dao/AnalysisTypeDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/dao/ConvulsionTypeDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/dao/DebutDescriptionDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/dao/MedicineGroupDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/dao/NegativeEffectDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/dao/NevrostatusDescriptionDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/dao/NevrostatusTypeDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/dao/RecommendationDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Record.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/dao/RecordDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/dao/ResearchDescriptionDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/dao/ResearchTypeDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/dao/SymptomDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/dao/SideEffectDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/dao/SyndromeTypeDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/pacard/dao/TreatmentTypeDao.java" />
       </list>
     </option>
   </component>
@@ -265,7 +329,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -351,11 +414,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -378,6 +437,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pacard" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -436,6 +499,10 @@
               <option name="myItemId" value="pacard" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entityPeople" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -469,6 +536,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -489,7 +557,7 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ServletsShop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lesson2Advanced" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
@@ -835,7 +903,11 @@
       <workItem from="1401429084779" duration="2394000" />
       <workItem from="1401542633893" duration="13569000" />
       <workItem from="1401616279706" duration="17213000" />
-      <workItem from="1401679730530" duration="2033000" />
+      <workItem from="1401679730530" duration="2072000" />
+      <workItem from="1402141046593" duration="2963000" />
+      <workItem from="1402148492722" duration="4395000" />
+      <workItem from="1402890465900" duration="1555000" />
+      <workItem from="1403363637214" duration="8002000" />
     </task>
     <task id="LOCAL-00001" summary="добавлены классы, которые используются в Record">
       <created>1401552164068</created>
@@ -853,14 +925,18 @@
       <created>1401642898713</created>
       <updated>1401642898713</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="добавлен persistence.xml, нужно его еще доделывать">
+      <created>1401681832503</created>
+      <updated>1401681832503</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38128000" />
+    <option name="totallyTimeSpent" value="55082000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="776" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -912,7 +988,8 @@
     </option>
     <MESSAGE value="добавлены классы, которые используются в Record" />
     <MESSAGE value="обновлены классы, которые используются в Record&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="обновлены классы, которые используются в Record&#10;" />
+    <MESSAGE value="добавлен persistence.xml, нужно его еще доделывать" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлен persistence.xml, нужно его еще доделывать" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -922,213 +999,31 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Syndrome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Diagnosis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="22" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/PatientDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="23" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityPeople/PacardUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="23" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289" />
+        <state line="11" column="0" selection-start="181" selection-end="181" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="289" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="31" selection-start="626" selection-end="626" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="1003">
-          <folding />
-        </state>
+        <state line="48" column="0" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1598" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="63" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityPeople/Patient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityPeople/Doctor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Record.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221">
-          <folding>
-            <element signature="e#887#906#0" expanded="true" />
-            <element signature="e#967#986#0" expanded="true" />
-            <element signature="e#1039#1054#0" expanded="true" />
-            <element signature="e#1118#1138#0" expanded="true" />
-            <element signature="e#1200#1218#0" expanded="true" />
-            <element signature="e#1283#1304#0" expanded="true" />
-            <element signature="e#1363#1381#0" expanded="true" />
-            <element signature="e#1440#1458#0" expanded="true" />
-            <element signature="e#1532#1556#0" expanded="true" />
-            <element signature="e#1619#1634#0" expanded="true" />
-            <element signature="e#1696#1715#0" expanded="true" />
-            <element signature="e#1780#1804#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/PatientDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="23" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityPeople/PacardUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="23" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="181" selection-end="181" vertical-scroll-proportion="0.32692307" vertical-offset="0" max-vertical-offset="572" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityPeople/Nurse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityPeople/Doctor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="39" selection-start="320" selection-end="320" vertical-scroll-proportion="0.36956522" vertical-offset="0" max-vertical-offset="598" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityPeople/PacardUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityPeople/Patient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="32" selection-start="834" selection-end="841" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="19" selection-start="1600" selection-end="1600" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="8" selection-start="302" selection-end="302" vertical-scroll-proportion="-3.4" vertical-offset="0" max-vertical-offset="187">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/ConvulsionType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/DebutType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="34" selection-start="374" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/DebutDescription.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="32" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/ResearchType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="37" selection-start="390" selection-end="402" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/ResearchDescription.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="37" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Symptom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="38" selection-start="319" selection-end="335" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/PatientDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="23" selection-start="88" selection-end="88" vertical-scroll-proportion="0.14214046" vertical-offset="0" max-vertical-offset="598">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityPeople/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="37" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1809" selection-end="1809" vertical-scroll-proportion="1.3182553" vertical-offset="0" max-vertical-offset="1598">
-          <folding />
-        </state>
+        <state line="11" column="8" selection-start="798" selection-end="798" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="578" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Analysis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+        <state line="7" column="1" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/AnalysisDescription.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="38" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/AnalysisType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="37" selection-start="390" selection-end="402" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+        <state line="19" column="46" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
           <folding />
         </state>
       </provider>
@@ -1140,47 +1035,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Anamnesis.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Debut.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="2" selection-start="228" selection-end="228" vertical-scroll-proportion="0.32956383" vertical-offset="0" max-vertical-offset="619">
+        <state line="6" column="27" selection-start="100" selection-end="123" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/DebutType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="42" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0" vertical-offset="116" max-vertical-offset="714">
+          <folding>
+            <element signature="e#524#525#0" expanded="false" />
+            <element signature="e#558#559#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Diagnosis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="103" selection-end="135" vertical-scroll-proportion="0.19224556" vertical-offset="0" max-vertical-offset="619">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Debut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="27" selection-start="100" selection-end="123" vertical-scroll-proportion="0.16478191" vertical-offset="0" max-vertical-offset="619">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/MedicineGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+        <state line="18" column="33" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#387#388#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Medicine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="24" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/NegativeEffect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="8" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1193,69 +1070,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/NevrostatusDescription.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="43" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+        <state line="23" column="16" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/NevrostatusType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="40" selection-start="405" selection-end="420" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+        <state line="24" column="25" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Record.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="79" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
-          <folding>
-            <element signature="e#887#906#0" expanded="true" />
-            <element signature="e#967#986#0" expanded="true" />
-            <element signature="e#1039#1054#0" expanded="true" />
-            <element signature="e#1118#1138#0" expanded="true" />
-            <element signature="e#1200#1218#0" expanded="true" />
-            <element signature="e#1283#1304#0" expanded="true" />
-            <element signature="e#1363#1381#0" expanded="true" />
-            <element signature="e#1440#1458#0" expanded="true" />
-            <element signature="e#1532#1556#0" expanded="true" />
-            <element signature="e#1619#1634#0" expanded="true" />
-            <element signature="e#1696#1715#0" expanded="true" />
-            <element signature="e#1780#1804#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Recommendation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+        <state line="9" column="27" selection-start="155" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Research.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+        <state line="7" column="0" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/ResearchType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="46" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="116" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/SideEffect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="38" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+        <state line="27" column="9" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Symptom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="20" selection-start="148" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="129" max-vertical-offset="748">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Syndrome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="129" selection-end="129" vertical-scroll-proportion="0.19899665" vertical-offset="0" max-vertical-offset="598">
+        <state line="7" column="0" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/SyndromeType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="43" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+        <state line="25" column="16" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="765">
           <folding />
         </state>
       </provider>
@@ -1269,17 +1140,240 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/TreatmentType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="38" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+        <state line="21" column="70" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0" vertical-offset="99" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/AnalysisType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="30" selection-start="310" selection-end="324" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Anamnesis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="20" selection-start="301" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/ConvulsionType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="26" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/DebutDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="39" selection-start="297" selection-end="317" vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Medicine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="16" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0" vertical-offset="201" max-vertical-offset="850">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/MedicineGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="49" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="850">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/NegativeEffect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="14" selection-start="748" selection-end="748" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/Record.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="11" selection-start="1825" selection-end="1825" vertical-scroll-proportion="0.0" vertical-offset="10" max-vertical-offset="2125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityPeople/Patient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/entityRecord/ResearchDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="37" selection-start="263" selection-end="284" vertical-scroll-proportion="0.0" vertical-offset="44" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/AnalysisDescriptionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="86" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/AnalysisTypeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="74" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/AnamnesisDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/ConvulsionTypeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="78" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/DebutDescriptionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="75" selection-start="1074" selection-end="1074" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/DiagnosisDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="38" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/MedicineDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="63" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="816">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/MedicineGroupDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="111" selection-start="1878" selection-end="1878" vertical-scroll-proportion="0.91071427" vertical-offset="0" max-vertical-offset="680">
+        <state line="38" column="63" selection-start="1187" selection-end="1187" vertical-scroll-proportion="0.0" vertical-offset="235" max-vertical-offset="833">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/NegativeEffectDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="112" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="833">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/NevrostatusDescriptionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="32" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/NevrostatusTypeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="21" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/PatientDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="23" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/RecommendationDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="26" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="850">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/RecordDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="100" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0" vertical-offset="320" max-vertical-offset="918">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/ResearchDescriptionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="15" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="816">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/ResearchTypeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="43" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="816">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/SideEffectDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="68" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.0" vertical-offset="184" max-vertical-offset="833">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/SymptomDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="31" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="833">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/SyndromeTypeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="74" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="833">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/pacard/dao/TreatmentTypeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="86" selection-start="634" selection-end="634" vertical-scroll-proportion="0.31772575" vertical-offset="201" max-vertical-offset="833">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

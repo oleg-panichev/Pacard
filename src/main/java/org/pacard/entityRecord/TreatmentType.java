@@ -13,9 +13,36 @@ public class TreatmentType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "TREATMENT_TYPE_ID")
-    private int TreatmentTypeID;
+    private int treatmentTypeID;
 
-    private String TreatmentTypeName;
+    private String treatmentTypeName;
     @OneToMany(mappedBy="treatmentType", fetch = FetchType.EAGER)
     private Set<Medicine> medicines;
+
+    public TreatmentType() {
+    }
+
+    public int getTreatmentTypeID() {
+        return treatmentTypeID;
+    }
+
+    public void setTreatmentTypeID(int treatmentTypeID) {
+        treatmentTypeID = treatmentTypeID;
+    }
+
+    public String getTreatmentTypeName() {
+        return treatmentTypeName;
+    }
+
+    public void setTreatmentTypeName(String treatmentTypeName) {
+        treatmentTypeName = treatmentTypeName;
+    }
+
+    public Set<Medicine> getMedicines() {
+        return medicines;
+    }
+
+    public void setMedicines(Set<Medicine> medicines) {
+        this.medicines = medicines;
+    }
 }

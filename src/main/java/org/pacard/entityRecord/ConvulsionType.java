@@ -10,6 +10,25 @@ import javax.persistence.*;
 public class ConvulsionType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int ConvulsionTypeID;
-    private String ConvulsionTypeName;
+    private int convulsionTypeID;
+    private String convulsionTypeName;
+
+    public ConvulsionType() {
+    }
+
+    public int getConvulsionTypeID() {
+        return convulsionTypeID;
+    }
+
+    public void setConvulsionTypeID(int convulsionTypeID) {
+        convulsionTypeID = convulsionTypeID;
+    }
+
+    public String getConvulsionTypeName() {
+        return convulsionTypeName;
+    }
+
+    public void setConvulsionTypeName(String convulsionTypeName) {
+        convulsionTypeName = convulsionTypeName;
+    }
 }

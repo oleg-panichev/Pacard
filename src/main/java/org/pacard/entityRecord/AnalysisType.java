@@ -12,10 +12,37 @@ public class AnalysisType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ANALYSIS_TYPE_ID")
-    private int AnalysisTypeID;
+    private int analysisTypeID;
 
-    private String AnalysisTypeName;
+    private String analysisTypeName;
 
     @OneToMany(mappedBy="analysisType", fetch = FetchType.EAGER)
     private Set<AnalysisDescription> descriptions;
+
+    public AnalysisType() {
+    }
+
+    public int getAnalysisTypeID() {
+        return analysisTypeID;
+    }
+
+    public void setAnalysisTypeID(int analysisTypeID) {
+        analysisTypeID = analysisTypeID;
+    }
+
+    public String getAnalysisTypeName() {
+        return analysisTypeName;
+    }
+
+    public void setAnalysisTypeName(String analysisTypeName) {
+        analysisTypeName = analysisTypeName;
+    }
+
+    public Set<AnalysisDescription> getDescriptions() {
+        return descriptions;
+    }
+
+    public void setDescriptions(Set<AnalysisDescription> descriptions) {
+        this.descriptions = descriptions;
+    }
 }

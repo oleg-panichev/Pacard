@@ -12,11 +12,38 @@ public class ResearchType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "RESEARCH_TYPE_ID")
-    private int ResearchTypeID;
+    private int researchTypeID;
 
-    private String ResearchTypeName;
+    private String researchTypeName;
 
     @OneToMany(mappedBy="researchType", fetch = FetchType.EAGER)
     private Set<ResearchDescription> descriptions;
+
+    public ResearchType() {
+    }
+
+    public int getResearchTypeID() {
+        return researchTypeID;
+    }
+
+    public void setResearchTypeID(int researchTypeID) {
+        researchTypeID = researchTypeID;
+    }
+
+    public String getResearchTypeName() {
+        return researchTypeName;
+    }
+
+    public void setResearchTypeName(String researchTypeName) {
+        researchTypeName = researchTypeName;
+    }
+
+    public Set<ResearchDescription> getDescriptions() {
+        return descriptions;
+    }
+
+    public void setDescriptions(Set<ResearchDescription> descriptions) {
+        this.descriptions = descriptions;
+    }
 }
 

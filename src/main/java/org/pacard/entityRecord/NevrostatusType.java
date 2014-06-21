@@ -12,11 +12,38 @@ public class NevrostatusType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "NEVROSTATUS_TYPE_ID")
-    private int NevrostatusTypeID;
+    private int nevrostatusTypeID;
 
-    private String NevrostatusTypeName;
+    private String nevrostatusTypeName;
 
     @OneToMany(mappedBy="nevrostatusType", fetch = FetchType.EAGER)
     private Set<NevrostatusDescription> descriptions;
+
+    public NevrostatusType() {
+    }
+
+    public int getNevrostatusTypeID() {
+        return nevrostatusTypeID;
+    }
+
+    public void setNevrostatusTypeID(int nevrostatusTypeID) {
+        nevrostatusTypeID = nevrostatusTypeID;
+    }
+
+    public String getNevrostatusTypeName() {
+        return nevrostatusTypeName;
+    }
+
+    public void setNevrostatusTypeName(String nevrostatusTypeName) {
+        nevrostatusTypeName = nevrostatusTypeName;
+    }
+
+    public Set<NevrostatusDescription> getDescriptions() {
+        return descriptions;
+    }
+
+    public void setDescriptions(Set<NevrostatusDescription> descriptions) {
+        this.descriptions = descriptions;
+    }
 }
 
