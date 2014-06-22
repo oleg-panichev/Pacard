@@ -1,6 +1,6 @@
 package org.pacard.entityRecord;
 
-import org.pacard.entityPeople.Doctor;
+import org.pacard.entityPeople.PacardUser;
 import org.pacard.entityPeople.Patient;
 
 import javax.persistence.Entity;
@@ -32,7 +32,7 @@ public class Record {
 
     @ManyToOne
     @JoinColumn(name="doctorId")
-    private Doctor doctor;
+    private PacardUser doctor;
 
     private int patientAge;
 
