@@ -1,4 +1,4 @@
-package org.pacard.entityRecord;
+package com.pacard.entityRecord;
 
 
 /**

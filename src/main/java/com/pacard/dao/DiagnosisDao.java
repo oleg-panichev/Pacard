@@ -1,6 +1,6 @@
-package org.pacard.dao;
+package com.pacard.dao;
 
-import org.pacard.entityRecord.Diagnosis;
+import com.pacard.entityRecord.Diagnosis;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

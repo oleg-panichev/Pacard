@@ -1,4 +1,4 @@
-package org.pacard.entityRecord;
+package com.pacard.entityRecord;
 
 import javax.persistence.*;
 
@@ -10,17 +10,17 @@ import javax.persistence.*;
 public class Anamnesis {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int anamnesisID;
+    private Long anamnesisID;
     private String anamnesisName;
 
     public Anamnesis() {
     }
 
-    public int getAnamnesisID() {
+    public Long getAnamnesisID() {
         return anamnesisID;
     }
 
-    public void setAnamnesisID(int anamnesisID) {
+    public void setAnamnesisID(Long anamnesisID) {
         this.anamnesisID = anamnesisID;
     }
 

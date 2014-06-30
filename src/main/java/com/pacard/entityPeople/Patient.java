@@ -1,6 +1,6 @@
-package org.pacard.entityPeople;
+package com.pacard.entityPeople;
 
-import org.pacard.entityRecord.Record;
+import com.pacard.entityRecord.Record;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ import java.util.Collection;
 public class Patient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int patientId;
+    private Long patientId;
 
     private String patientName;// Имя пациента
     enum Gender {male, female};
@@ -60,12 +60,6 @@ public class Patient {
 
     @Override
     public int hashCode() {
-        int result = patientId;
-        result = 31 * result + (patientName != null ? patientName.hashCode() : 0);
-        result = 31 * result + (gender != null ? gender.hashCode() : 0);
-        result = 31 * result + (birthDate != null ? birthDate.hashCode() : 0);
-        result = 31 * result + (policyNumber != null ? policyNumber.hashCode() : 0);
-        result = 31 * result + (cardNumber != null ? cardNumber.hashCode() : 0);
-        return result;
+        return super.hashCode();
     }
 }

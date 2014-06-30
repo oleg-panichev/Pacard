@@ -1,4 +1,4 @@
-package org.pacard.entityRecord;
+package com.pacard.entityRecord;
 
 import javax.persistence.*;
 
@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class NevrostatusDescription {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int nevrostatusDescriptionID;
+    private Long nevrostatusDescriptionID;
     private String nevrostatusDescriptionName;
 
     @ManyToOne
@@ -20,11 +20,11 @@ public class NevrostatusDescription {
     public NevrostatusDescription() {
     }
 
-    public int getNevrostatusDescriptionID() {
+    public Long getNevrostatusDescriptionID() {
         return nevrostatusDescriptionID;
     }
 
-    public void setNevrostatusDescriptionID(int nevrostatusDescriptionID) {
+    public void setNevrostatusDescriptionID(Long nevrostatusDescriptionID) {
         nevrostatusDescriptionID = nevrostatusDescriptionID;
     }
 

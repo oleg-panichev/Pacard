@@ -1,7 +1,7 @@
-package org.pacard.dao;
+package com.pacard.dao;
 
-import org.pacard.entityRecord.SyndromeType;
-import org.pacard.entityRecord.TreatmentType;
+import com.pacard.entityRecord.SyndromeType;
+import com.pacard.entityRecord.TreatmentType;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

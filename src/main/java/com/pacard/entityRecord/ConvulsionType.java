@@ -1,4 +1,4 @@
-package org.pacard.entityRecord;
+package com.pacard.entityRecord;
 
 import javax.persistence.*;
 
@@ -10,17 +10,17 @@ import javax.persistence.*;
 public class ConvulsionType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int convulsionTypeID;
+    private Long convulsionTypeID;
     private String convulsionTypeName;
 
     public ConvulsionType() {
     }
 
-    public int getConvulsionTypeID() {
+    public Long getConvulsionTypeID() {
         return convulsionTypeID;
     }
 
-    public void setConvulsionTypeID(int convulsionTypeID) {
+    public void setConvulsionTypeID(Long convulsionTypeID) {
         convulsionTypeID = convulsionTypeID;
     }
 

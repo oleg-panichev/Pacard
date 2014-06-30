@@ -1,4 +1,4 @@
-package org.pacard.entityRecord;
+package com.pacard.entityRecord;
 
 /**
  * Created by Алена on 01.06.14.
@@ -13,7 +13,7 @@ public class TreatmentType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "TREATMENT_TYPE_ID")
-    private int treatmentTypeID;
+    private Long treatmentTypeID;
 
     private String treatmentTypeName;
     @OneToMany(mappedBy="treatmentType", fetch = FetchType.EAGER)
@@ -22,11 +22,11 @@ public class TreatmentType {
     public TreatmentType() {
     }
 
-    public int getTreatmentTypeID() {
+    public Long getTreatmentTypeID() {
         return treatmentTypeID;
     }
 
-    public void setTreatmentTypeID(int treatmentTypeID) {
+    public void setTreatmentTypeID(Long treatmentTypeID) {
         treatmentTypeID = treatmentTypeID;
     }
 

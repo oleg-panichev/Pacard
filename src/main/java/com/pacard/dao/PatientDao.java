@@ -1,4 +1,4 @@
-package org.pacard.dao;
+package com.pacard.dao;
 
 /**
  * Created by Oleg on 30.05.14.

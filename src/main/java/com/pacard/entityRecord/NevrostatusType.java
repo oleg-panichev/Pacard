@@ -1,4 +1,4 @@
-package org.pacard.entityRecord;
+package com.pacard.entityRecord;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -12,7 +12,7 @@ public class NevrostatusType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "NEVROSTATUS_TYPE_ID")
-    private int nevrostatusTypeID;
+    private Long nevrostatusTypeID;
 
     private String nevrostatusTypeName;
 
@@ -22,11 +22,11 @@ public class NevrostatusType {
     public NevrostatusType() {
     }
 
-    public int getNevrostatusTypeID() {
+    public Long getNevrostatusTypeID() {
         return nevrostatusTypeID;
     }
 
-    public void setNevrostatusTypeID(int nevrostatusTypeID) {
+    public void setNevrostatusTypeID(Long nevrostatusTypeID) {
         nevrostatusTypeID = nevrostatusTypeID;
     }
 

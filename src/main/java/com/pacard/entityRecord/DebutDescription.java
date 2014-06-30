@@ -1,4 +1,4 @@
-package org.pacard.entityRecord;
+package com.pacard.entityRecord;
 
 import javax.persistence.*;
 
@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class DebutDescription {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int debutDescriptionID;
+    private Long debutDescriptionID;
 
     private String debutDescriptionName;
     @ManyToOne
@@ -20,11 +20,11 @@ public class DebutDescription {
     public DebutDescription() {
     }
 
-    public int getDebutDescriptionID() {
+    public Long getDebutDescriptionID() {
         return debutDescriptionID;
     }
 
-    public void setDebutDescriptionID(int debutDescriptionID) {
+    public void setDebutDescriptionID(Long debutDescriptionID) {
         debutDescriptionID = debutDescriptionID;
     }
 

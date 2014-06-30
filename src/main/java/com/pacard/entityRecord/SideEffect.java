@@ -1,4 +1,4 @@
-package org.pacard.entityRecord;
+package com.pacard.entityRecord;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -12,7 +12,7 @@ public class SideEffect {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "SIDE_EFFECT_ID")
-    private int sideEffectID;
+    private Long sideEffectID;
 
     private String sideEffectName;
 
@@ -23,11 +23,11 @@ public class SideEffect {
     public SideEffect() {
     }
 
-    public int getSideEffectID() {
+    public Long getSideEffectID() {
         return sideEffectID;
     }
 
-    public void setSideEffectID(int sideEffectID) {
+    public void setSideEffectID(Long sideEffectID) {
         sideEffectID = sideEffectID;
     }
 

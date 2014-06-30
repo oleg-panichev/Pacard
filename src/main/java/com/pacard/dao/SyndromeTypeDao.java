@@ -1,7 +1,7 @@
-package org.pacard.dao;
+package com.pacard.dao;
 
-import org.pacard.entityRecord.SideEffect;
-import org.pacard.entityRecord.SyndromeType;
+import com.pacard.entityRecord.SideEffect;
+import com.pacard.entityRecord.SyndromeType;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

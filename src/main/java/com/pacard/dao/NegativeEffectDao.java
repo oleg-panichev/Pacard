@@ -1,7 +1,7 @@
-package org.pacard.dao;
+package com.pacard.dao;
 
-import org.pacard.entityRecord.MedicineGroup;
-import org.pacard.entityRecord.NegativeEffect;
+import com.pacard.entityRecord.MedicineGroup;
+import com.pacard.entityRecord.NegativeEffect;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

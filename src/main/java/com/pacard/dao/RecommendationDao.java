@@ -1,7 +1,7 @@
-package org.pacard.dao;
+package com.pacard.dao;
 
-import org.pacard.entityRecord.NevrostatusType;
-import org.pacard.entityRecord.Recommendation;
+import com.pacard.entityRecord.NevrostatusType;
+import com.pacard.entityRecord.Recommendation;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

@@ -1,7 +1,7 @@
-package org.pacard.dao;
+package com.pacard.dao;
 
-import org.pacard.entityRecord.Recommendation;
-import org.pacard.entityRecord.Record;
+import com.pacard.entityRecord.Recommendation;
+import com.pacard.entityRecord.Record;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

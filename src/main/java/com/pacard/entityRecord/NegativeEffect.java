@@ -1,4 +1,4 @@
-package org.pacard.entityRecord;
+package com.pacard.entityRecord;
 
 import javax.persistence.*;
 
@@ -10,17 +10,17 @@ import javax.persistence.*;
 public class NegativeEffect {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int negativeEffectID;
+    private Long negativeEffectID;
     private String negativeEffectName;
 
     public NegativeEffect() {
     }
 
-    public int getNegativeEffectID() {
+    public Long getNegativeEffectID() {
         return negativeEffectID;
     }
 
-    public void setNegativeEffectID(int negativeEffectID) {
+    public void setNegativeEffectID(Long negativeEffectID) {
         negativeEffectID = negativeEffectID;
     }
 

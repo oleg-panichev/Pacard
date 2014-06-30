@@ -1,4 +1,4 @@
-package org.pacard.entityPeople;
+package com.pacard.entityPeople;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,7 +14,7 @@ import javax.persistence.Table;
 public class Doctor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public int doctorId;
+    public Long doctorId;
     public String doctorName;
     public String doctorPost;
     public String phoneNumber;

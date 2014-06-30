@@ -1,4 +1,4 @@
-package org.pacard.entityRecord;
+package com.pacard.entityRecord;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -12,7 +12,7 @@ public class DebutType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "DEBUT_TYPE_ID")
-    private int debutTypeID;
+    private Long debutTypeID;
 
     private String debutTypeName;
     @OneToMany(mappedBy="debutType", fetch = FetchType.EAGER)
@@ -21,11 +21,11 @@ public class DebutType {
     public DebutType() {
     }
 
-    public int getDebutTypeID() {
+    public Long getDebutTypeID() {
         return debutTypeID;
     }
 
-    public void setDebutTypeID(int debutTypeID) {
+    public void setDebutTypeID(Long debutTypeID) {
         debutTypeID = debutTypeID;
     }
 

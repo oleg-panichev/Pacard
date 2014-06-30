@@ -1,4 +1,4 @@
-package org.pacard.entityRecord;
+package com.pacard.entityRecord;
 
 import javax.persistence.*;
 
@@ -10,17 +10,17 @@ import javax.persistence.*;
 public class Recommendation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int recommendationID;
+    private Long recommendationID;
     private String recommendationName;
 
     public Recommendation() {
     }
 
-    public int getRecommendationID() {
+    public Long getRecommendationID() {
         return recommendationID;
     }
 
-    public void setRecommendationID(int recommendationID) {
+    public void setRecommendationID(Long recommendationID) {
         this.recommendationID = recommendationID;
     }
 

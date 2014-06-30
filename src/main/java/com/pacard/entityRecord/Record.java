@@ -1,7 +1,7 @@
-package org.pacard.entityRecord;
+package com.pacard.entityRecord;
 
-import org.pacard.entityPeople.Doctor;
-import org.pacard.entityPeople.Patient;
+import com.pacard.entityPeople.Doctor;
+import com.pacard.entityPeople.Patient;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -20,7 +20,7 @@ import java.util.*;
 public class Record {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int recordId;
+    private Long recordId;
 
     @ManyToOne
     @JoinColumn(name="patientId")
@@ -55,11 +55,11 @@ public class Record {
     public Record() {
     }
 
-    public int getRecordId() {
+    public Long getRecordId() {
         return recordId;
     }
 
-    public void setRecordId(int recordId) {
+    public void setRecordId(Long recordId) {
         this.recordId = recordId;
     }
 

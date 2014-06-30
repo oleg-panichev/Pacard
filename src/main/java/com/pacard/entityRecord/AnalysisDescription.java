@@ -1,4 +1,4 @@
-package org.pacard.entityRecord;
+package com.pacard.entityRecord;
 
 import javax.persistence.*;
 
@@ -11,7 +11,7 @@ public class AnalysisDescription {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
-    private int analysisDescriptionID;
+    private Long analysisDescriptionID;
 
     private String analysisDescriptionName;
 
@@ -22,11 +22,11 @@ public class AnalysisDescription {
     public AnalysisDescription() {
     }
 
-    public int getAnalysisDescriptionID() {
+    public Long getAnalysisDescriptionID() {
         return analysisDescriptionID;
     }
 
-    public void setAnalysisDescriptionID(int analysisDescriptionID) {
+    public void setAnalysisDescriptionID(Long analysisDescriptionID) {
         analysisDescriptionID = analysisDescriptionID;
     }
 
