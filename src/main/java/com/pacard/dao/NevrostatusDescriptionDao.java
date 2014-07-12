@@ -1,6 +1,6 @@
 package com.pacard.dao;
 
-import com.pacard.entityRecord.NevrostatusDescription;
+import com.pacard.entityRecord.NeurostatusDescription;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -15,29 +15,28 @@ public class NevrostatusDescriptionDao {
     @PersistenceContext
     private EntityManager em;
 
-    public void saveNevrostatusDescription (NevrostatusDescription description){
+    public void saveNevrostatusDescription (NeurostatusDescription description){
         em.persist(description);
     }
 
-    public NevrostatusDescription findById(int id) {
-        return (NevrostatusDescription)em.createQuery("SELECT o from Nevrostatus_Description o WHERE o.nevrostatusDescriptionID=:id").
-                setParameter("id", id).getSingleResult();
+    public NeurostatusDescription findById(Long id) {
+        return em.find(NeurostatusDescription.class, id);
     }
 
-    public NevrostatusDescription findByName(String name) {
-        return (NevrostatusDescription)em.createQuery("SELECT o from Nevrostatus_Description o WHERE o.nevrostatusDescriptionName=:n").
+    public NeurostatusDescription findByName(String name) {
+        return (NeurostatusDescription)em.createQuery("SELECT o from Nevrostatus_Description o WHERE o.nevrostatusDescriptionName=:n").
                 setParameter("n", name).getSingleResult();
     }
 
-    public List<NevrostatusDescription> findAll() {
-        return (List<NevrostatusDescription>)em.createQuery("SELECT o from Nevrostatus_Description o").getResultList();
+    public List<NeurostatusDescription> findAll() {
+        return (List<NeurostatusDescription>)em.createQuery("SELECT o from Nevrostatus_Description o").getResultList();
     }
 
-    public void updateNevrostatusDescription(NevrostatusDescription description) {
+    public void updateNevrostatusDescription(NeurostatusDescription description) {
         em.merge(description);
     }
 
-    public void removeNevrostatusDescription(NevrostatusDescription description) {
+    public void removeNevrostatusDescription(NeurostatusDescription description) {
         em.remove(description);
     }
 }

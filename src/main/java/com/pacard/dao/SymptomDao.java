@@ -20,9 +20,8 @@ public class SymptomDao {
         em.persist(symptom);
     }
 
-    public Symptom findById(int id) {
-        return (Symptom)em.createQuery("SELECT o from Symptom o WHERE o.symptomID=:id").
-                setParameter("id", id).getSingleResult();
+    public Symptom findById(Long id) {
+        return em.find(Symptom.class, id);
     }
 
     public Symptom findByName(String name) {

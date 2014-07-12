@@ -20,9 +20,8 @@ public class SyndromeTypeDao {
         em.persist(type);
     }
 
-    public SyndromeType findById(int id) {
-        return (SyndromeType)em.createQuery("SELECT o from Syndrome_Type o WHERE o.syndromeTypeID=:id").
-                setParameter("id", id).getSingleResult();
+    public SyndromeType findById(Long id) {
+        return em.find(SyndromeType.class, id);
     }
 
     public SyndromeType findByName(String name) {

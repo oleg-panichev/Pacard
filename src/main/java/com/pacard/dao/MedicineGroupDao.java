@@ -20,9 +20,8 @@ public class MedicineGroupDao {
         em.persist(group);
     }
 
-    public MedicineGroup findById(int id) {
-        return (MedicineGroup)em.createQuery("SELECT o from Medicine_Group o WHERE o.medicineGroupID=:id").
-                setParameter("id", id).getSingleResult();
+    public MedicineGroup findById(Long id) {
+        return em.find(MedicineGroup.class, id);
     }
 
     public MedicineGroup findByName(String name) {

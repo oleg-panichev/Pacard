@@ -20,9 +20,8 @@ public class TreatmentTypeDao {
         em.persist(type);
     }
 
-    public TreatmentType findById(int id) {
-        return (TreatmentType)em.createQuery("SELECT o from Treatment_Type o WHERE o.treatmentTypeID=:id").
-                setParameter("id", id).getSingleResult();
+    public TreatmentType findById(Long id) {
+        return em.find(TreatmentType.class, id);
     }
 
     public TreatmentType findByName(String name) {

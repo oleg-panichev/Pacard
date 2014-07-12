@@ -6,26 +6,26 @@ import javax.persistence.*;
  * Created by Алена on 31.05.14.
  */
 @Entity
-@Table(name="DEBUT_DESCRIPTION")
 public class DebutDescription {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long debutDescriptionID;
+    private Long debutDescriptionId;
 
     private String debutDescriptionName;
-    @ManyToOne
-    @JoinColumn(name="DEBUT_TYPE_ID")
+
+    @OneToOne
+    @JoinColumn(name="debutTypeId")
     private DebutType debutType;
 
     public DebutDescription() {
     }
 
-    public Long getDebutDescriptionID() {
-        return debutDescriptionID;
+    public Long getDebutDescriptionId() {
+        return debutDescriptionId;
     }
 
-    public void setDebutDescriptionID(Long debutDescriptionID) {
-        debutDescriptionID = debutDescriptionID;
+    public void setDebutDescriptionId(Long debutDescriptionId) {
+        debutDescriptionId = debutDescriptionId;
     }
 
     public String getDebutDescriptionName() {
@@ -42,5 +42,34 @@ public class DebutDescription {
 
     public void setDebutType(DebutType debutType) {
         this.debutType = debutType;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof DebutDescription)) return false;
+
+        DebutDescription that = (DebutDescription) o;
+
+        if (!debutDescriptionName.equals(that.debutDescriptionName)) return false;
+        if (!debutType.equals(that.debutType)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = debutDescriptionName.hashCode();
+        result = 31 * result + debutType.hashCode();
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "DebutDescription{" +
+                "debutDescriptionID=" + debutDescriptionId +
+                ", debutDescriptionName='" + debutDescriptionName + '\'' +
+                ", debutType=" + debutType +
+                '}';
     }
 }

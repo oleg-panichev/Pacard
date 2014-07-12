@@ -41,14 +41,14 @@ public class Record {
     private Map<Convulsion, String> convulsions = new TreeMap<Convulsion, String>();
 
     private Map<Syndrome, String> syndromes = new TreeMap<Syndrome, String>();
-    private Map<Nevrostatus, String> nevrostatus = new TreeMap<Nevrostatus, String>();
+    private Map<Neurostatus, String> nevrostatus = new TreeMap<Neurostatus, String>();
     private Map<Analysis, String> analysis = new TreeMap<Analysis, String>();
     private Map<Research, String> research = new TreeMap<Research, String>();
 
     private Map<Recommendation, String> recommendations = new TreeMap<Recommendation, String>();
     private Set<MedicineGroup> medicineGroups = new TreeSet<MedicineGroup>();
     private Map<Treatment, String> treatment = new TreeMap<Treatment, String>();
-    private Map<NegativeEffect, String> effects = new TreeMap<NegativeEffect, String>();
+    private Map<NegativeFactor, String> effects = new TreeMap<NegativeFactor, String>();
     private String summary;
 
     public Record() {
@@ -134,11 +134,11 @@ public class Record {
         this.syndromes = syndromes;
     }
 
-    public Map<Nevrostatus, String> getNevrostatus() {
+    public Map<Neurostatus, String> getNevrostatus() {
         return nevrostatus;
     }
 
-    public void setNevrostatus(Map<Nevrostatus, String> nevrostatus) {
+    public void setNevrostatus(Map<Neurostatus, String> nevrostatus) {
         this.nevrostatus = nevrostatus;
     }
 
@@ -182,11 +182,11 @@ public class Record {
         this.treatment = treatment;
     }
 
-    public Map<NegativeEffect, String> getEffects() {
+    public Map<NegativeFactor, String> getEffects() {
         return effects;
     }
 
-    public void setEffects(Map<NegativeEffect, String> effects) {
+    public void setEffects(Map<NegativeFactor, String> effects) {
         this.effects = effects;
     }
 
@@ -249,4 +249,6 @@ public class Record {
         result = 31 * result + (summary != null ? summary.hashCode() : 0);
         return result;
     }
+
+
 }

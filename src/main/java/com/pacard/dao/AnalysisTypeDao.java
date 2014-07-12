@@ -19,9 +19,8 @@ public class AnalysisTypeDao {
         em.persist(type);
     }
 
-    public AnalysisType findById(int id) {
-        return (AnalysisType)em.createQuery("SELECT o from Analysis_Type o WHERE o.analysisTypeID=:id").
-                setParameter("id", id).getSingleResult();
+    public AnalysisType findById(Long id) {
+        return em.find(AnalysisType.class, id);
     }
 
     public AnalysisType findByName(String name) {

@@ -20,9 +20,8 @@ public class SideEffectDao {
         em.persist(effect);
     }
 
-    public SideEffect findById(int id) {
-        return (SideEffect)em.createQuery("SELECT o from Side_Effect o WHERE o.sideEffectID=:id").
-                setParameter("id", id).getSingleResult();
+    public SideEffect findById(Long id) {
+        return em.find(SideEffect.class, id);
     }
 
     public SideEffect findByName(String name) {

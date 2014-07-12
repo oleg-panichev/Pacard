@@ -19,9 +19,8 @@ public class AnalysisDescriptionDao {
         em.persist(description);
     }
 
-    public AnalysisDescription findById(int id) {
-        return (AnalysisDescription)em.createQuery("SELECT o from Analysis_Description o WHERE o.analysisDescriptionID=:id").
-                setParameter("id", id).getSingleResult();
+    public AnalysisDescription findById(Long id) {
+        return em.find(AnalysisDescription.class, id);
     }
 
     public AnalysisDescription findByName(String name) {

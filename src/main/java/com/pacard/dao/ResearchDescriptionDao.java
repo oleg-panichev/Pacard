@@ -19,9 +19,8 @@ public class ResearchDescriptionDao {
         em.persist(description);
     }
 
-    public ResearchDescription findById(int id) {
-        return (ResearchDescription)em.createQuery("SELECT o from Research_Description o WHERE o.researchDescriptionID=:id").
-                setParameter("id", id).getSingleResult();
+    public ResearchDescription findById(Long id) {
+        return em.find(ResearchDescription.class, id);
     }
 
     public ResearchDescription findByName(String name) {

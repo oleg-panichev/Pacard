@@ -6,22 +6,21 @@ import javax.persistence.*;
  * Created by Oleg on 30.05.14.
  */
 @Entity
-@Table(name="DIAGNOSIS")
 public class Diagnosis {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long diagnosisID;
+    private Long diagnosisId;
     private String diagnosisName;
 
     public Diagnosis() {
     }
 
-    public Long getDiagnosisID() {
-        return diagnosisID;
+    public Long getDiagnosisId() {
+        return diagnosisId;
     }
 
-    public void setDiagnosisID(Long diagnosisID) {
-        this.diagnosisID = diagnosisID;
+    public void setDiagnosisId(Long diagnosisID) {
+        this.diagnosisId = diagnosisId;
     }
 
     public String getDiagnosisName() {
@@ -30,5 +29,30 @@ public class Diagnosis {
 
     public void setDiagnosisName(String diagnosisName) {
         this.diagnosisName = diagnosisName;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Diagnosis)) return false;
+
+        Diagnosis diagnosis = (Diagnosis) o;
+
+        if (!diagnosisName.equals(diagnosis.diagnosisName)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return diagnosisName.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "Diagnosis{" +
+                "diagnosisID=" + diagnosisId +
+                ", diagnosisName='" + diagnosisName + '\'' +
+                '}';
     }
 }

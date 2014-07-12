@@ -1,6 +1,5 @@
 package com.pacard.dao;
 
-import com.pacard.entityRecord.NevrostatusType;
 import com.pacard.entityRecord.Recommendation;
 import org.springframework.stereotype.Repository;
 
@@ -20,9 +19,8 @@ public class RecommendationDao {
         em.persist(recommendation);
     }
 
-    public Recommendation findById(int id) {
-        return (Recommendation)em.createQuery("SELECT o from Recommendation o WHERE o.recommendationID=:id").
-                setParameter("id", id).getSingleResult();
+    public Recommendation findById(Long id) {
+        return em.find(Recommendation.class, id);
     }
 
     public Recommendation findByName(String name) {

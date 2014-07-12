@@ -19,9 +19,8 @@ public class ConvulsionTypeDao {
         em.persist(type);
     }
 
-    public ConvulsionType findById(int id) {
-        return (ConvulsionType)em.createQuery("SELECT o from Convulsion_Type o WHERE o.convulsionTypeID=:id").
-                setParameter("id", id).getSingleResult();
+    public ConvulsionType findById(Long id) {
+        return em.find(ConvulsionType.class, id);
     }
 
     public ConvulsionType findByName(String name) {

@@ -1,6 +1,6 @@
 package com.pacard.dao;
 
-import com.pacard.entityRecord.NevrostatusType;
+import com.pacard.entityRecord.NeurostatusType;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -15,29 +15,28 @@ public class NevrostatusTypeDao {
     @PersistenceContext
     private EntityManager em;
 
-    public void saveNevrostatusType (NevrostatusType type){
+    public void saveNevrostatusType (NeurostatusType type){
         em.persist(type);
     }
 
-    public NevrostatusType findById(int id) {
-        return (NevrostatusType)em.createQuery("SELECT o from Nevrostatus_Type o WHERE o.nevrostatusTypeID=:id").
-                setParameter("id", id).getSingleResult();
+    public NeurostatusType findById(Long id) {
+        return em.find(NeurostatusType.class, id);
     }
 
-    public NevrostatusType findByName(String name) {
-        return (NevrostatusType)em.createQuery("SELECT o from Nevrostatus_Type o WHERE o.nevrostatusTypeName=:n").
+    public NeurostatusType findByName(String name) {
+        return (NeurostatusType)em.createQuery("SELECT o from Nevrostatus_Type o WHERE o.nevrostatusTypeName=:n").
                 setParameter("n", name).getSingleResult();
     }
 
-    public List<NevrostatusType> findAll() {
-        return (List<NevrostatusType>)em.createQuery("SELECT o from Nevrostatus_Type o").getResultList();
+    public List<NeurostatusType> findAll() {
+        return (List<NeurostatusType>)em.createQuery("SELECT o from Nevrostatus_Type o").getResultList();
     }
 
-    public void updateNevrostatusType(NevrostatusType type) {
+    public void updateNevrostatusType(NeurostatusType type) {
         em.merge(type);
     }
 
-    public void removeNevrostatusType(NevrostatusType type) {
+    public void removeNevrostatusType(NeurostatusType type) {
         em.remove(type);
     }
 }

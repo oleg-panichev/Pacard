@@ -6,31 +6,31 @@ import javax.persistence.*;
  * Created by Алена on 01.06.14.
  */
 @Entity
-@Table(name="MEDICINE")
+
 public class Medicine {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long medicineID;
+    private Long medicineId;
 
     private String medicineName;
 
-    @ManyToOne
-    @JoinColumn(name="MEDICINE_GROUP_ID")
+    @OneToOne
+    @JoinColumn(name="medicineGroupId")
     private MedicineGroup medicineGroup;
 
-    @ManyToOne
-    @JoinColumn(name = "TREATMENT_TYPE_ID")
+    @OneToOne
+    @JoinColumn(name = "treatmentTypeId")
     private TreatmentType treatmentType;
 
     public Medicine() {
     }
 
-    public Long getMedicineID() {
-        return medicineID;
+    public Long getMedicineId() {
+        return medicineId;
     }
 
-    public void setMedicineID(Long medicineID) {
-        medicineID = medicineID;
+    public void setMedicineId(Long medicineId) {
+        medicineId = medicineId;
     }
 
     public String getMedicineName() {
@@ -55,5 +55,37 @@ public class Medicine {
 
     public void setTreatmentType(TreatmentType treatmentType) {
         this.treatmentType = treatmentType;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Medicine)) return false;
+
+        Medicine medicine = (Medicine) o;
+
+        if (!medicineGroup.equals(medicine.medicineGroup)) return false;
+        if (!medicineName.equals(medicine.medicineName)) return false;
+        if (!treatmentType.equals(medicine.treatmentType)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = medicineName.hashCode();
+        result = 31 * result + medicineGroup.hashCode();
+        result = 31 * result + treatmentType.hashCode();
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Medicine{" +
+                "medicineId=" + medicineId +
+                ", medicineName='" + medicineName + '\'' +
+                ", medicineGroup=" + medicineGroup +
+                ", treatmentType=" + treatmentType +
+                '}';
     }
 }

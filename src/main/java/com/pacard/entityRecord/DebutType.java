@@ -7,26 +7,25 @@ import java.util.Set;
  * Created by Алена on 31.05.14.
  */
 @Entity
-@Table(name="DEBUT_TYPE")
 public class DebutType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "DEBUT_TYPE_ID")
-    private Long debutTypeID;
+    private Long debutTypeId;
 
     private String debutTypeName;
-    @OneToMany(mappedBy="debutType", fetch = FetchType.EAGER)
-    private Set<DebutDescription> descriptions;
+
+    @OneToOne(mappedBy="debutType", fetch = FetchType.LAZY)
+    private DebutDescription description;
 
     public DebutType() {
     }
 
-    public Long getDebutTypeID() {
-        return debutTypeID;
+    public Long getDebutTypeId() {
+        return debutTypeId;
     }
 
-    public void setDebutTypeID(Long debutTypeID) {
-        debutTypeID = debutTypeID;
+    public void setDebutTypeId(Long debutTypeId) {
+        debutTypeId = debutTypeId;
     }
 
     public String getDebutTypeName() {
@@ -37,11 +36,38 @@ public class DebutType {
         debutTypeName = debutTypeName;
     }
 
-    public Set<DebutDescription> getDescriptions() {
-        return descriptions;
+    public DebutDescription getDescription() {
+        return description;
     }
 
-    public void setDescriptions(Set<DebutDescription> descriptions) {
-        this.descriptions = descriptions;
+    public void setDescription(DebutDescription description) {
+        this.description = description;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof DebutType)) return false;
+
+        DebutType debutType = (DebutType) o;
+
+        if (!debutTypeName.equals(debutType.debutTypeName)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return debutTypeName.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "DebutType{" +
+                "debutTypeID=" + debutTypeId +
+                ", debutTypeName='" + debutTypeName + '\'' +
+                ", description=" + description +
+                '}';
+    }
+
 }

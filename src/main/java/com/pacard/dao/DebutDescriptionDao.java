@@ -19,9 +19,8 @@ public class DebutDescriptionDao {
         em.persist(description);
     }
 
-    public DebutDescription findById(int id) {
-        return (DebutDescription)em.createQuery("SELECT o from Debut_Description o WHERE o.debutDescriptionID=:id").
-                setParameter("id", id).getSingleResult();
+    public DebutDescription findById(Long id) {
+        return em.find(DebutDescription.class, id);
     }
 
     public DebutDescription findByName(String name) {

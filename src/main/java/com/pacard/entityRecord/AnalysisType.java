@@ -7,27 +7,25 @@ import java.util.Set;
  * Created by Алена on 31.05.14.
  */
 @Entity
-@Table(name="ANALYSIS_TYPE")
 public class AnalysisType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ANALYSIS_TYPE_ID")
-    private Long analysisTypeID;
+    private Long analysisTypeId;
 
     private String analysisTypeName;
 
-    @OneToMany(mappedBy="analysisType", fetch = FetchType.EAGER)
-    private Set<AnalysisDescription> descriptions;
+    @OneToOne (fetch = FetchType.LAZY, mappedBy = "analysisType")
+    private AnalysisDescription analysisDescription;
 
     public AnalysisType() {
     }
 
-    public Long getAnalysisTypeID() {
-        return analysisTypeID;
+    public Long getAnalysisTypeId() {
+        return analysisTypeId;
     }
 
-    public void setAnalysisTypeID(Long analysisTypeID) {
-        analysisTypeID = analysisTypeID;
+    public void setAnalysisTypeId(Long analysisTypeId) {
+        this.analysisTypeId = analysisTypeId;
     }
 
     public String getAnalysisTypeName() {
@@ -35,14 +33,43 @@ public class AnalysisType {
     }
 
     public void setAnalysisTypeName(String analysisTypeName) {
-        analysisTypeName = analysisTypeName;
+        this.analysisTypeName = analysisTypeName;
     }
 
-    public Set<AnalysisDescription> getDescriptions() {
-        return descriptions;
+    public AnalysisDescription getAnalysisDescription() {
+        return analysisDescription;
     }
 
-    public void setDescriptions(Set<AnalysisDescription> descriptions) {
-        this.descriptions = descriptions;
+    public void setAnalysisDescription(AnalysisDescription analysisDescription) {
+        this.analysisDescription = analysisDescription;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof AnalysisType)) return false;
+
+        AnalysisType that = (AnalysisType) o;
+
+        if (!analysisDescription.equals(that.analysisDescription)) return false;
+        if (!analysisTypeName.equals(that.analysisTypeName)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = analysisTypeName.hashCode();
+        result = 31 * result + analysisDescription.hashCode();
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "AnalysisType{" +
+                "analysisTypeID=" + analysisTypeId +
+                ", analysisTypeName='" + analysisTypeName + '\'' +
+                ", analysisDescription=" + analysisDescription +
+                '}';
     }
 }

@@ -6,22 +6,21 @@ import javax.persistence.*;
  * Created by Алена on 31.05.14.
  */
 @Entity
-@Table(name="ANAMNESIS")
 public class Anamnesis {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long anamnesisID;
+    private Long anamnesisId;
     private String anamnesisName;
 
     public Anamnesis() {
     }
 
-    public Long getAnamnesisID() {
-        return anamnesisID;
+    public Long getAnamnesisId() {
+        return anamnesisId;
     }
 
-    public void setAnamnesisID(Long anamnesisID) {
-        this.anamnesisID = anamnesisID;
+    public void setAnamnesisId(Long anamnesisId) {
+        this.anamnesisId = anamnesisId;
     }
 
     public String getAnamnesisName() {
@@ -30,5 +29,30 @@ public class Anamnesis {
 
     public void setAnamnesisName(String anamnesisName) {
         this.anamnesisName = anamnesisName;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Anamnesis)) return false;
+
+        Anamnesis anamnesis = (Anamnesis) o;
+
+        if (!anamnesisName.equals(anamnesis.anamnesisName)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return anamnesisName.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "Anamnesis{" +
+                "anamnesisID=" + anamnesisId +
+                ", anamnesisName='" + anamnesisName + '\'' +
+                '}';
     }
 }

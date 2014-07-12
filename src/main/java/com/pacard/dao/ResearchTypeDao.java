@@ -19,9 +19,8 @@ public class ResearchTypeDao {
         em.persist(type);
     }
 
-    public ResearchType findById(int id) {
-        return (ResearchType)em.createQuery("SELECT o from Research_Type o WHERE o.researchTypeID=:id").
-                setParameter("id", id).getSingleResult();
+    public ResearchType findById(Long id) {
+        return em.find(ResearchType.class, id);
     }
 
     public ResearchType findByName(String name) {

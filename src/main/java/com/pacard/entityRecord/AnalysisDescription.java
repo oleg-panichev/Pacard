@@ -6,17 +6,15 @@ import javax.persistence.*;
  * Created by Алена on 31.05.14.
  */
 @Entity
-@Table(name="ANALYSIS_DESCRIPTION")
 public class AnalysisDescription {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column
     private Long analysisDescriptionID;
 
     private String analysisDescriptionName;
 
-    @ManyToOne
-    @JoinColumn(name = "ANALYSIS_TYPE_ID")
+    @OneToOne
+    @JoinColumn(name="analysisTypeId")
     private AnalysisType analysisType;
 
     public AnalysisDescription() {
@@ -27,7 +25,7 @@ public class AnalysisDescription {
     }
 
     public void setAnalysisDescriptionID(Long analysisDescriptionID) {
-        analysisDescriptionID = analysisDescriptionID;
+        this.analysisDescriptionID = analysisDescriptionID;
     }
 
     public String getAnalysisDescriptionName() {
@@ -35,7 +33,7 @@ public class AnalysisDescription {
     }
 
     public void setAnalysisDescriptionName(String analysisDescriptionName) {
-        analysisDescriptionName = analysisDescriptionName;
+        this.analysisDescriptionName = analysisDescriptionName;
     }
 
     public AnalysisType getAnalysisType() {
@@ -44,6 +42,35 @@ public class AnalysisDescription {
 
     public void setAnalysisType(AnalysisType analysisType) {
         this.analysisType = analysisType;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof AnalysisDescription)) return false;
+
+        AnalysisDescription that = (AnalysisDescription) o;
+
+        if (!analysisDescriptionName.equals(that.analysisDescriptionName)) return false;
+        if (!analysisType.equals(that.analysisType)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = analysisDescriptionName.hashCode();
+        result = 31 * result + analysisType.hashCode();
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "AnalysisDescription{" +
+                "analysisDescriptionID=" + analysisDescriptionID +
+                ", analysisDescriptionName='" + analysisDescriptionName + '\'' +
+                ", analysisType=" + analysisType +
+                '}';
     }
 }
 
