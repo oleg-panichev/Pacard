@@ -8,5 +8,26 @@
     <session-factory>
         <mapping class="org.appfuse.model.User"/>
         <mapping class="org.appfuse.model.Role"/>
+        <mapping class="com.pacard.entityPeople.Patient"/>
+        <mapping class="com.pacard.entityRecord.AnalysisDescription"/>
+        <mapping class="com.pacard.entityRecord.AnalysisType"/>
+        <mapping class="com.pacard.entityRecord.Anamnesis"/>
+        <mapping class="com.pacard.entityRecord.ConvulsionType"/>
+        <mapping class="com.pacard.entityRecord.DebutDescription"/>
+        <mapping class="com.pacard.entityRecord.DebutType"/>
+        <mapping class="com.pacard.entityRecord.Diagnosis"/>
+        <mapping class="com.pacard.entityRecord.Medicine"/>
+        <mapping class="com.pacard.entityRecord.MedicineGroup"/>
+        <mapping class="com.pacard.entityRecord.NegativeEffect"/>
+        <mapping class="com.pacard.entityRecord.NevrostatusDescription"/>
+        <mapping class="com.pacard.entityRecord.NevrostatusType"/>
+        <mapping class="com.pacard.entityRecord.Recommendation"/>
+        <mapping class="com.pacard.entityRecord.Record"/>
+        <mapping class="com.pacard.entityRecord.ResearchDescription"/>
+        <mapping class="com.pacard.entityRecord.ResearchType"/>
+        <mapping class="com.pacard.entityRecord.SideEffect"/>
+        <mapping class="com.pacard.entityRecord.Symptom"/>
+        <mapping class="com.pacard.entityRecord.SyndromeType"/>
+        <mapping class="com.pacard.entityRecord.TreatmentType"/>
     </session-factory>
 </hibernate-configuration>

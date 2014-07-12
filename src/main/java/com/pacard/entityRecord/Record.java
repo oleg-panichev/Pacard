@@ -1,7 +1,7 @@
 package com.pacard.entityRecord;
 
-import com.pacard.entityPeople.Doctor;
 import com.pacard.entityPeople.Patient;
+import org.appfuse.model.User;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,7 +16,6 @@ import java.util.*;
  * Created by Oleg on 30.05.14.
  */
 @Entity
-@Table(name="RECORD")
 public class Record {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,8 +29,8 @@ public class Record {
     private Calendar date;
 
     @ManyToOne
-    @JoinColumn(name="doctorId")
-    private Doctor doctor;
+    @JoinColumn(name="id")
+    private User user;
 
     private int patientAge;
 
@@ -79,12 +78,12 @@ public class Record {
         this.date = date;
     }
 
-    public Doctor getDoctor() {
-        return doctor;
+    public User getUser() {
+        return user;
     }
 
-    public void setDoctor(Doctor doctor) {
-        this.doctor = doctor;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public int getPatientAge() {
@@ -197,5 +196,57 @@ public class Record {
 
     public void setSummary(String summary) {
         this.summary = summary;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Record record = (Record) o;
+
+        if (patientAge != record.patientAge) return false;
+        if (analysis != null ? !analysis.equals(record.analysis) : record.analysis != null) return false;
+        if (anamnesis != null ? !anamnesis.equals(record.anamnesis) : record.anamnesis != null) return false;
+        if (convulsions != null ? !convulsions.equals(record.convulsions) : record.convulsions != null) return false;
+        if (date != null ? !date.equals(record.date) : record.date != null) return false;
+        if (debut != null ? !debut.equals(record.debut) : record.debut != null) return false;
+        if (diagnosis != null ? !diagnosis.equals(record.diagnosis) : record.diagnosis != null) return false;
+        if (effects != null ? !effects.equals(record.effects) : record.effects != null) return false;
+        if (medicineGroups != null ? !medicineGroups.equals(record.medicineGroups) : record.medicineGroups != null)
+            return false;
+        if (nevrostatus != null ? !nevrostatus.equals(record.nevrostatus) : record.nevrostatus != null) return false;
+        if (!patient.equals(record.patient)) return false;
+        if (recommendations != null ? !recommendations.equals(record.recommendations) : record.recommendations != null)
+            return false;
+        if (research != null ? !research.equals(record.research) : record.research != null) return false;
+        if (summary != null ? !summary.equals(record.summary) : record.summary != null) return false;
+        if (syndromes != null ? !syndromes.equals(record.syndromes) : record.syndromes != null) return false;
+        if (treatment != null ? !treatment.equals(record.treatment) : record.treatment != null) return false;
+        if (!user.equals(record.user)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = patient.hashCode();
+        result = 31 * result + (date != null ? date.hashCode() : 0);
+        result = 31 * result + user.hashCode();
+        result = 31 * result + patientAge;
+        result = 31 * result + (diagnosis != null ? diagnosis.hashCode() : 0);
+        result = 31 * result + (anamnesis != null ? anamnesis.hashCode() : 0);
+        result = 31 * result + (debut != null ? debut.hashCode() : 0);
+        result = 31 * result + (convulsions != null ? convulsions.hashCode() : 0);
+        result = 31 * result + (syndromes != null ? syndromes.hashCode() : 0);
+        result = 31 * result + (nevrostatus != null ? nevrostatus.hashCode() : 0);
+        result = 31 * result + (analysis != null ? analysis.hashCode() : 0);
+        result = 31 * result + (research != null ? research.hashCode() : 0);
+        result = 31 * result + (recommendations != null ? recommendations.hashCode() : 0);
+        result = 31 * result + (medicineGroups != null ? medicineGroups.hashCode() : 0);
+        result = 31 * result + (treatment != null ? treatment.hashCode() : 0);
+        result = 31 * result + (effects != null ? effects.hashCode() : 0);
+        result = 31 * result + (summary != null ? summary.hashCode() : 0);
+        return result;
     }
 }

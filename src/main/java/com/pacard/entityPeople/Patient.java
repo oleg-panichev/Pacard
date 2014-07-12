@@ -19,9 +19,9 @@ public class Patient {
     private Long patientId;
 
     private String patientName;// Имя пациента
-    enum Gender {male, female};
 
-    private Gender gender; // Пол пациента
+    @Column(name="Gender", columnDefinition="enum('Male','Female')")
+    private String gender; // Пол пациента
     private Calendar birthDate;
     private String phoneNumber;
     private String motherName;
