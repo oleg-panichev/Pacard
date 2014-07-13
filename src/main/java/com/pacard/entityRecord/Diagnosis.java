@@ -19,7 +19,7 @@ public class Diagnosis {
         return diagnosisId;
     }
 
-    public void setDiagnosisId(Long diagnosisID) {
+    public void setDiagnosisId(Long diagnosisId) {
         this.diagnosisId = diagnosisId;
     }
 

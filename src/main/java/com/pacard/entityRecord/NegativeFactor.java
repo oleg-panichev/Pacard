@@ -20,7 +20,7 @@ public class NegativeFactor {
     }
 
     public void setNegativeFactorId(Long negativeFactorId) {
-        negativeFactorId = negativeFactorId;
+        this.negativeFactorId = negativeFactorId;
     }
 
     public String getNegativeFactorName() {
@@ -28,7 +28,7 @@ public class NegativeFactor {
     }
 
     public void setNegativeFactorName(String negativeFactorName) {
-        negativeFactorName = negativeFactorName;
+        this.negativeFactorName = negativeFactorName;
     }
 
     @Override

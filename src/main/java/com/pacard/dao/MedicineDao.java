@@ -20,8 +20,7 @@ private EntityManager em;
     }
 
     public Medicine findById(int id) {
-        return (Medicine)em.createQuery("SELECT o from Medicine o WHERE o.medicineID=:id").
-                setParameter("id", id).getSingleResult();
+        return em.find(Medicine.class, id);
     }
 
     public Medicine findByName(String name) {

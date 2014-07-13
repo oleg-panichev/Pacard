@@ -7,27 +7,25 @@ import java.util.Set;
  * Created by Алена on 31.05.14.
  */
 @Entity
-@Table(name="SYNDROME_TYPE")
 public class SyndromeType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "SYNDROME_TYPE_ID")
-    private Long syndromeTypeID;
+    private Long syndromeTypeId;
 
     private String syndromeTypeName;
 
-    @OneToMany(mappedBy="syndromeType", fetch = FetchType.EAGER)
-    private Set<Symptom> symptoms;
+    @OneToOne(mappedBy="syndromeType", fetch = FetchType.LAZY)
+    private Symptom symptom;
 
     public SyndromeType() {
     }
 
-    public Long getSyndromeTypeID() {
-        return syndromeTypeID;
+    public Long getSyndromeTypeId() {
+        return syndromeTypeId;
     }
 
-    public void setSyndromeTypeID(Long syndromeTypeID) {
-        syndromeTypeID = syndromeTypeID;
+    public void setSyndromeTypeId(Long syndromeTypeId) {
+        this.syndromeTypeId = syndromeTypeId;
     }
 
     public String getSyndromeTypeName() {
@@ -35,15 +33,41 @@ public class SyndromeType {
     }
 
     public void setSyndromeTypeName(String syndromeTypeName) {
-        syndromeTypeName = syndromeTypeName;
+        this.syndromeTypeName = syndromeTypeName;
     }
 
-    public Set<Symptom> getSymptoms() {
-        return symptoms;
+    public Symptom getSymptom() {
+        return symptom;
     }
 
-    public void setSymptoms(Set<Symptom> symptoms) {
-        this.symptoms = symptoms;
+    public void setSymptom(Symptom symptom) {
+        this.symptom = symptom;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof SyndromeType)) return false;
+
+        SyndromeType that = (SyndromeType) o;
+
+        if (!syndromeTypeName.equals(that.syndromeTypeName)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return syndromeTypeName.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "SyndromeType{" +
+                "syndromeTypeId=" + syndromeTypeId +
+                ", syndromeTypeName='" + syndromeTypeName + '\'' +
+                ", symptom=" + symptom +
+                '}';
     }
 }
 

@@ -20,8 +20,7 @@ public class DiagnosisDao {
     }
 
     public Diagnosis findById(int id) {
-        return (Diagnosis)em.createQuery("SELECT o from Diagnosis o WHERE o.diagnosisID=:id").
-                setParameter("id", id).getSingleResult();
+        return em.find(Diagnosis.class, id);
     }
 
     public Diagnosis findByName(String name) {

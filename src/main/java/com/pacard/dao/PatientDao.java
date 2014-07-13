@@ -1,7 +1,7 @@
 package com.pacard.dao;
 
+
 import com.pacard.entityPeople.Patient;
-import com.pacard.entityRecord.Medicine;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

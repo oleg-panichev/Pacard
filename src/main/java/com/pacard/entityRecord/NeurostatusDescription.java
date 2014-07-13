@@ -25,7 +25,7 @@ public class NeurostatusDescription {
     }
 
     public void setNevrostatusDescriptionId(Long nevrostatusDescriptionId) {
-        nevrostatusDescriptionId = nevrostatusDescriptionId;
+        this.nevrostatusDescriptionId = nevrostatusDescriptionId;
     }
 
     public String getNevrostatusDescriptionName() {
@@ -33,7 +33,7 @@ public class NeurostatusDescription {
     }
 
     public void setNevrostatusDescriptionName(String nevrostatusDescriptionName) {
-        nevrostatusDescriptionName = nevrostatusDescriptionName;
+        this.nevrostatusDescriptionName = nevrostatusDescriptionName;
     }
 
     public NeurostatusType getNeurostatusType() {

@@ -6,26 +6,25 @@ import javax.persistence.*;
  * Created by Алена on 31.05.14.
  */
 @Entity
-@Table(name="SYMPTOM")
 public class Symptom {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long symptomID;
+    private Long symptomId;
     private String symptomName;
 
-    @ManyToOne
-    @JoinColumn(name="SYNDROME_TYPE_ID")
+    @OneToOne
+    @JoinColumn(name="syndromeTypeId")
     private SyndromeType syndromeType;
 
     public Symptom() {
     }
 
-    public Long getSymptomID() {
-        return symptomID;
+    public Long getSymptomId() {
+        return symptomId;
     }
 
-    public void setSymptomID(Long symptomID) {
-        this.symptomID = symptomID;
+    public void setSymptomId(Long symptomId) {
+        this.symptomId = symptomId;
     }
 
     public String getSymptomName() {
@@ -42,6 +41,35 @@ public class Symptom {
 
     public void setSyndromeType(SyndromeType syndromeType) {
         this.syndromeType = syndromeType;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Symptom)) return false;
+
+        Symptom symptom = (Symptom) o;
+
+        if (!symptomName.equals(symptom.symptomName)) return false;
+        if (!syndromeType.equals(symptom.syndromeType)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = symptomName.hashCode();
+        result = 31 * result + syndromeType.hashCode();
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Symptom{" +
+                "symptomId=" + symptomId +
+                ", symptomName='" + symptomName + '\'' +
+                ", syndromeType=" + syndromeType +
+                '}';
     }
 }
 

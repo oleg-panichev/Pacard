@@ -20,8 +20,7 @@ public class AnamnesisDao {
     }
 
     public Anamnesis findById(int id) {
-        return (Anamnesis)em.createQuery("SELECT o from Anamnesis o WHERE o.anamnesisID=:id").
-                setParameter("id", id).getSingleResult();
+        return em.find(Anamnesis.class, id);
     }
 
     public Anamnesis findByName(String name) {

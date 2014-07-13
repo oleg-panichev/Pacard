@@ -26,7 +26,7 @@ public class SideEffect {
     }
 
     public void setSideEffectId(Long sideEffectId) {
-        sideEffectId = sideEffectId;
+        this.sideEffectId = sideEffectId;
     }
 
     public String getSideEffectName() {
@@ -34,7 +34,7 @@ public class SideEffect {
     }
 
     public void setSideEffectName(String sideEffectName) {
-        sideEffectName = sideEffectName;
+        this.sideEffectName = sideEffectName;
     }
 
     public Set<MedicineGroup> getGroups() {

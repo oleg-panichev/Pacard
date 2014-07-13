@@ -30,7 +30,7 @@ public class Medicine {
     }
 
     public void setMedicineId(Long medicineId) {
-        medicineId = medicineId;
+        this.medicineId = medicineId;
     }
 
     public String getMedicineName() {
@@ -38,7 +38,7 @@ public class Medicine {
     }
 
     public void setMedicineName(String medicineName) {
-        medicineName = medicineName;
+        this.medicineName = medicineName;
     }
 
     public MedicineGroup getMedicineGroup() {

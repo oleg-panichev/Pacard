@@ -15,22 +15,21 @@ public class ConvulsionType {
     public ConvulsionType() {
     }
 
-    public Long getConvulsionTypeId() {
-        return convulsionTypeId;
-    }
-
-    public void setConvulsionTypeId(Long convulsionTypeId) {
-        convulsionTypeId = convulsionTypeId;
-    }
-
     public String getConvulsionTypeName() {
         return convulsionTypeName;
     }
 
     public void setConvulsionTypeName(String convulsionTypeName) {
-        convulsionTypeName = convulsionTypeName;
+        this.convulsionTypeName = convulsionTypeName;
     }
 
+    public Long getConvulsionTypeId() {
+        return convulsionTypeId;
+    }
+
+    public void setConvulsionTypeId(Long convulsionTypeId) {
+        this.convulsionTypeId = convulsionTypeId;
+    }
 
     @Override
     public boolean equals(Object o) {

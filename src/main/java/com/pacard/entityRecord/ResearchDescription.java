@@ -6,27 +6,26 @@ import javax.persistence.*;
  * Created by Алена on 31.05.14.
  */
 @Entity
-@Table(name="RESEARCH_DESCRIPTION")
 public class ResearchDescription {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long researchDescriptionID;
+    private Long researchDescriptionId;
 
     private String researchDescriptionName;
 
-    @ManyToOne
-    @JoinColumn(name="RESEARCH_TYPE_ID")
+    @OneToOne
+    @JoinColumn(name="researchTypeId")
     private ResearchType researchType;
 
     public ResearchDescription() {
     }
 
-    public Long getResearchDescriptionID() {
-        return researchDescriptionID;
+    public Long getResearchDescriptionId() {
+        return researchDescriptionId;
     }
 
-    public void setResearchDescriptionID(Long researchDescriptionID) {
-        researchDescriptionID = researchDescriptionID;
+    public void setResearchDescriptionId(Long researchDescriptionId) {
+        this.researchDescriptionId = researchDescriptionId;
     }
 
     public String getResearchDescriptionName() {
@@ -34,7 +33,7 @@ public class ResearchDescription {
     }
 
     public void setResearchDescriptionName(String researchDescriptionName) {
-        researchDescriptionName = researchDescriptionName;
+        this.researchDescriptionName = researchDescriptionName;
     }
 
     public ResearchType getResearchType() {
@@ -43,6 +42,35 @@ public class ResearchDescription {
 
     public void setResearchType(ResearchType researchType) {
         this.researchType = researchType;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ResearchDescription)) return false;
+
+        ResearchDescription that = (ResearchDescription) o;
+
+        if (!researchDescriptionName.equals(that.researchDescriptionName)) return false;
+        if (!researchType.equals(that.researchType)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = researchDescriptionName.hashCode();
+        result = 31 * result + researchType.hashCode();
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "ResearchDescription{" +
+                "researchDescriptionId=" + researchDescriptionId +
+                ", researchDescriptionName='" + researchDescriptionName + '\'' +
+                ", researchType=" + researchType +
+                '}';
     }
 }
 

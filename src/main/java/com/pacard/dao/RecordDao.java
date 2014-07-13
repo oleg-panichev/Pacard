@@ -1,6 +1,5 @@
 package com.pacard.dao;
 
-import com.pacard.entityRecord.Recommendation;
 import com.pacard.entityRecord.Record;
 import org.springframework.stereotype.Repository;
 
@@ -21,18 +20,17 @@ public class RecordDao {
     }
 
     public Record findById(int id) {
-        return (Record)em.createQuery("SELECT o from Record o WHERE o.recordID=:id").
-                setParameter("id", id).getSingleResult();
+        return em.find(Record.class, id);
     }
 
-    public Record findByName(String name) {
-        return (Record)em.createQuery("SELECT o from Record o WHERE o.recordName=:n").
-                setParameter("n", name).getSingleResult();
+    public List<Record> findByUsername(String username) {
+        return (List<Record>)em.createQuery("SELECT o from Record, app_user o WHERE o.record.user.username=:n").
+                setParameter("n", username).getResultList();
     }
 
-    public List<Record> findByPatient(int patientID) {
-        return (List<Record>)em.createQuery("SELECT o from Record o WHERE o.patient.patientID=:n").
-                setParameter("n", patientID).getResultList();
+    public List<Record> findByPatient(int patientId) {
+        return (List<Record>)em.createQuery("SELECT o from Record, Patient o WHERE o.patient.patientId=:n").
+                setParameter("n", patientId).getResultList();
     }
 
     public List<Record> findAll() {

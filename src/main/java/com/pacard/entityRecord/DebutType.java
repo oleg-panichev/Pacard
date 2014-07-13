@@ -25,7 +25,7 @@ public class DebutType {
     }
 
     public void setDebutTypeId(Long debutTypeId) {
-        debutTypeId = debutTypeId;
+        this.debutTypeId = debutTypeId;
     }
 
     public String getDebutTypeName() {
@@ -33,7 +33,7 @@ public class DebutType {
     }
 
     public void setDebutTypeName(String debutTypeName) {
-        debutTypeName = debutTypeName;
+        this.debutTypeName = debutTypeName;
     }
 
     public DebutDescription getDescription() {

@@ -7,27 +7,25 @@ import java.util.Set;
  * Created by Алена on 31.05.14.
  */
 @Entity
-@Table(name="RESEARCH_TYPE")
 public class ResearchType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "RESEARCH_TYPE_ID")
-    private Long researchTypeID;
+    private Long researchTypeId;
 
     private String researchTypeName;
 
-    @OneToMany(mappedBy="researchType", fetch = FetchType.EAGER)
-    private Set<ResearchDescription> descriptions;
+    @OneToOne(mappedBy="researchType", fetch = FetchType.LAZY)
+    private ResearchDescription description;
 
     public ResearchType() {
     }
 
-    public Long getResearchTypeID() {
-        return researchTypeID;
+    public Long getResearchTypeId() {
+        return researchTypeId;
     }
 
-    public void setResearchTypeID(Long researchTypeID) {
-        researchTypeID = researchTypeID;
+    public void setResearchTypeId(Long researchTypeId) {
+        this.researchTypeId = researchTypeId;
     }
 
     public String getResearchTypeName() {
@@ -35,15 +33,41 @@ public class ResearchType {
     }
 
     public void setResearchTypeName(String researchTypeName) {
-        researchTypeName = researchTypeName;
+        this.researchTypeName = researchTypeName;
     }
 
-    public Set<ResearchDescription> getDescriptions() {
-        return descriptions;
+    public ResearchDescription getDescription() {
+        return description;
     }
 
-    public void setDescriptions(Set<ResearchDescription> descriptions) {
-        this.descriptions = descriptions;
+    public void setDescription(ResearchDescription description) {
+        this.description = description;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ResearchType)) return false;
+
+        ResearchType that = (ResearchType) o;
+
+        if (!researchTypeName.equals(that.researchTypeName)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return researchTypeName.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "ResearchType{" +
+                "researchTypeId=" + researchTypeId +
+                ", researchTypeName='" + researchTypeName + '\'' +
+                ", description=" + description +
+                '}';
     }
 }
 

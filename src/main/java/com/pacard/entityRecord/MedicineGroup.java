@@ -32,7 +32,7 @@ public class MedicineGroup {
     }
 
     public void setMedicineGroupID(Long medicineGroupID) {
-        medicineGroupID = medicineGroupID;
+        this.medicineGroupID = medicineGroupID;
     }
 
     public String getMedicineGroupName() {
@@ -40,7 +40,7 @@ public class MedicineGroup {
     }
 
     public void setMedicineGroupName(String medicineGroupName) {
-        medicineGroupName = medicineGroupName;
+        this.medicineGroupName = medicineGroupName;
     }
 
     public Set<Medicine> getMedicines() {
@@ -57,5 +57,32 @@ public class MedicineGroup {
 
     public void setEffects(Set<SideEffect> effects) {
         this.effects = effects;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof MedicineGroup)) return false;
+
+        MedicineGroup that = (MedicineGroup) o;
+
+        if (!medicineGroupName.equals(that.medicineGroupName)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return medicineGroupName.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "MedicineGroup{" +
+                "medicineGroupID=" + medicineGroupID +
+                ", medicineGroupName='" + medicineGroupName + '\'' +
+                ", medicines=" + medicines +
+                ", effects=" + effects +
+                '}';
     }
 }

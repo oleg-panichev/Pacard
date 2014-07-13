@@ -8,26 +8,25 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table(name = "TREATMENT_TYPE")
 public class TreatmentType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "TREATMENT_TYPE_ID")
-    private Long treatmentTypeID;
+    private Long treatmentTypeId;
 
     private String treatmentTypeName;
-    @OneToMany(mappedBy="treatmentType", fetch = FetchType.EAGER)
-    private Set<Medicine> medicines;
+
+    @OneToOne(mappedBy="treatmentType", fetch = FetchType.LAZY)
+    private Medicine medicine;
 
     public TreatmentType() {
     }
 
-    public Long getTreatmentTypeID() {
-        return treatmentTypeID;
+    public Long getTreatmentTypeId() {
+        return treatmentTypeId;
     }
 
-    public void setTreatmentTypeID(Long treatmentTypeID) {
-        treatmentTypeID = treatmentTypeID;
+    public void setTreatmentTypeId(Long treatmentTypeId) {
+        this.treatmentTypeId = treatmentTypeId;
     }
 
     public String getTreatmentTypeName() {
@@ -35,14 +34,41 @@ public class TreatmentType {
     }
 
     public void setTreatmentTypeName(String treatmentTypeName) {
-        treatmentTypeName = treatmentTypeName;
+        this.treatmentTypeName = treatmentTypeName;
     }
 
-    public Set<Medicine> getMedicines() {
-        return medicines;
+    public Medicine getMedicine() {
+        return medicine;
     }
 
-    public void setMedicines(Set<Medicine> medicines) {
-        this.medicines = medicines;
+    public void setMedicine(Medicine medicine) {
+        this.medicine = medicine;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof TreatmentType)) return false;
+
+        TreatmentType that = (TreatmentType) o;
+
+        if (!treatmentTypeName.equals(that.treatmentTypeName)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return treatmentTypeName.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "TreatmentType{" +
+                "treatmentTypeId=" + treatmentTypeId +
+                ", treatmentTypeName='" + treatmentTypeName + '\'' +
+                ", medicine=" + medicine +
+                '}';
     }
 }
+
