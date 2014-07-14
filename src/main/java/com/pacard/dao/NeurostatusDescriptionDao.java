@@ -11,11 +11,11 @@ import java.util.List;
  * Created by Алена on 07.06.14.
  */
 @Repository
-public class NevrostatusDescriptionDao {
+public class NeurostatusDescriptionDao {
     @PersistenceContext
     private EntityManager em;
 
-    public void saveNevrostatusDescription (NeurostatusDescription description){
+    public void saveNeurostatusDescription (NeurostatusDescription description){
         em.persist(description);
     }
 
@@ -24,19 +24,19 @@ public class NevrostatusDescriptionDao {
     }
 
     public NeurostatusDescription findByName(String name) {
-        return (NeurostatusDescription)em.createQuery("SELECT o from Nevrostatus_Description o WHERE o.nevrostatusDescriptionName=:n").
+        return (NeurostatusDescription)em.createQuery("SELECT o from Neurostatus_Description o WHERE o.neurostatusDescriptionName=:n").
                 setParameter("n", name).getSingleResult();
     }
 
     public List<NeurostatusDescription> findAll() {
-        return (List<NeurostatusDescription>)em.createQuery("SELECT o from Nevrostatus_Description o").getResultList();
+        return (List<NeurostatusDescription>)em.createQuery("SELECT o from Neurostatus_Description o").getResultList();
     }
 
-    public void updateNevrostatusDescription(NeurostatusDescription description) {
+    public void updateNeurostatusDescription(NeurostatusDescription description) {
         em.merge(description);
     }
 
-    public void removeNevrostatusDescription(NeurostatusDescription description) {
+    public void removeNeurostatusDescription(NeurostatusDescription description) {
         em.remove(description);
     }
 }

@@ -19,7 +19,7 @@ public class AnamnesisDao {
         em.persist(anamnesis);
     }
 
-    public Anamnesis findById(int id) {
+    public Anamnesis findById(Long id) {
         return em.find(Anamnesis.class, id);
     }
 

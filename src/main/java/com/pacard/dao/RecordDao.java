@@ -24,11 +24,11 @@ public class RecordDao {
     }
 
     public List<Record> findByUsername(String username) {
-        return (List<Record>)em.createQuery("SELECT o from Record, app_user o WHERE o.record.user.username=:n").
+        return (List<Record>)em.createQuery("SELECT o from Record, app_user o WHERE o.user.username=:n").
                 setParameter("n", username).getResultList();
     }
 
-    public List<Record> findByPatient(int patientId) {
+    public List<Record> findByPatientId(int patientId) {
         return (List<Record>)em.createQuery("SELECT o from Record, Patient o WHERE o.patient.patientId=:n").
                 setParameter("n", patientId).getResultList();
     }

@@ -23,9 +23,9 @@ public class AnalysisDescriptionDao {
         return em.find(AnalysisDescription.class, id);
     }
 
-    public AnalysisDescription findByName(String name) {
-        return (AnalysisDescription)em.createQuery("SELECT o from Analysis_Description o WHERE o.analysisDescriptionName=:n").
-                setParameter("n", name).getSingleResult();
+    public List<AnalysisDescription> findByName(String name) {
+        return (List<AnalysisDescription>)em.createQuery("SELECT o from Analysis_Description o WHERE o.analysisDescriptionName=:n").
+                setParameter("n", name).getResultList();
     }
 
     public List<AnalysisDescription> findAll() {
