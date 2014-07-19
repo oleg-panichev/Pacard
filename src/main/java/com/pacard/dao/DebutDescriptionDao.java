@@ -23,9 +23,9 @@ public class DebutDescriptionDao {
         return em.find(DebutDescription.class, id);
     }
 
-    public DebutDescription findByName(String name) {
-        return (DebutDescription)em.createQuery("SELECT o from Debut_Description o WHERE o.debutDescriptionName=:n").
-                setParameter("n", name).getSingleResult();
+    public List<DebutDescription> findByName(String name) {
+        return (List<DebutDescription>)em.createQuery("SELECT o from Debut_Description o WHERE o.debutDescriptionName=:n").
+                setParameter("n", name).getResultList();
     }
 
     public List<DebutDescription> findAll() {

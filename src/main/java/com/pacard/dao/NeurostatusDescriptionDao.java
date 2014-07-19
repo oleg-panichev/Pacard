@@ -2,7 +2,6 @@ package com.pacard.dao;
 
 import com.pacard.entityRecord.NeurostatusDescription;
 import org.springframework.stereotype.Repository;
-
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
@@ -23,9 +22,9 @@ public class NeurostatusDescriptionDao {
         return em.find(NeurostatusDescription.class, id);
     }
 
-    public NeurostatusDescription findByName(String name) {
-        return (NeurostatusDescription)em.createQuery("SELECT o from Neurostatus_Description o WHERE o.neurostatusDescriptionName=:n").
-                setParameter("n", name).getSingleResult();
+    public List<NeurostatusDescription> findByName(String name) {
+        return (List<NeurostatusDescription>)em.createQuery("SELECT o from Neurostatus_Description o " +
+                "WHERE o.neurostatusDescriptionName=:n").setParameter("n", name).getResultList();
     }
 
     public List<NeurostatusDescription> findAll() {

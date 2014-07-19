@@ -24,9 +24,9 @@ public class SideEffectDao {
         return em.find(SideEffect.class, id);
     }
 
-    public SideEffect findByName(String name) {
-        return (SideEffect)em.createQuery("SELECT o from Side_Effect o WHERE o.sideEffectName=:n").
-                setParameter("n", name).getSingleResult();
+    public List<SideEffect> findByName(String name) {
+        return (List<SideEffect>)em.createQuery("SELECT o from Side_Effect o WHERE o.sideEffectName=:n").
+                setParameter("n", name).getResultList();
     }
 
     public List<SideEffect> findAll() {

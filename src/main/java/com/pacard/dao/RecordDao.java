@@ -19,7 +19,7 @@ public class RecordDao {
         em.persist(record);
     }
 
-    public Record findById(int id) {
+    public Record findById(Long id) {
         return em.find(Record.class, id);
     }
 
@@ -28,7 +28,7 @@ public class RecordDao {
                 setParameter("n", username).getResultList();
     }
 
-    public List<Record> findByPatientId(int patientId) {
+    public List<Record> findByPatientId(Long patientId) {
         return (List<Record>)em.createQuery("SELECT o from Record, Patient o WHERE o.patient.patientId=:n").
                 setParameter("n", patientId).getResultList();
     }

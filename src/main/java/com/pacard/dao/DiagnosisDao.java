@@ -19,7 +19,7 @@ public class DiagnosisDao {
         em.persist(diagnosis);
     }
 
-    public Diagnosis findById(int id) {
+    public Diagnosis findById(Long id) {
         return em.find(Diagnosis.class, id);
     }
 

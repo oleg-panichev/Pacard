@@ -24,9 +24,9 @@ public class PatientDao {
         return em.find(Patient.class, id);
     }
 
-    public Patient findByName(String name) {
-        return (Patient)em.createQuery("SELECT o from Patient o WHERE o.patientName=:n").
-                setParameter("n", name).getSingleResult();
+    public Patient findByName(String name, String surname) {
+        return (Patient)em.createQuery("SELECT o from Patient o WHERE o.patientName=:n AND o.patientSurname=:s").
+                setParameter("n", name).setParameter("s", surname).getSingleResult();
     }
 
     public List<Patient> findAll() {

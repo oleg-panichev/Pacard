@@ -19,7 +19,7 @@ private EntityManager em;
         em.persist(medicine);
     }
 
-    public Medicine findById(int id) {
+    public Medicine findById(Long id) {
         return em.find(Medicine.class, id);
     }
 

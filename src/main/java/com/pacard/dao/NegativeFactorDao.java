@@ -20,7 +20,7 @@ public class NegativeFactorDao {
         em.persist(factor);
     }
 
-    public NegativeFactor findById(int id) {
+    public NegativeFactor findById(Long id) {
         return em.find(NegativeFactor.class, id);
     }
 
